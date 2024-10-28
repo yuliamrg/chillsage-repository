@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chillsage": {
+    "angular-example": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/chillsage",
+            "outputPath": "dist/angular-example",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,9 +25,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/themes/adminlte/plugins/fontawesome-free/css/all.min.css",
+              "src/assets/themes/adminlte/dist/css/adminlte.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/themes/adminlte/plugins/jquery/jquery.min.js",
+              "src/assets/themes/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+              "src/assets/themes/adminlte/dist/js/adminlte.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -57,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "chillsage:build:production"
+              "buildTarget": "angular-example:build:production"
             },
             "development": {
-              "buildTarget": "chillsage:build:development"
+              "buildTarget": "angular-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "chillsage:build"
+            "buildTarget": "angular-example:build"
           }
         },
         "test": {
