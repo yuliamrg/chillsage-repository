@@ -1,0 +1,98 @@
+/* Estilos generales para el sidebar */
+.main-sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #343a40;
+  color: #c2c7d0;
+  padding-top: 20px;
+}
+
+/* Logo de la marca en el sidebar */
+.brand-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.brand-link .brand-image {
+  width: 160px !important; /* Ajuste de tamaño con !important */
+  height: 160px !important; /* Ajuste de tamaño con !important */
+  margin-right: 5px;
+  max-width: none; /* Remueve cualquier restricción */
+  max-height: none; /* Remueve cualquier restricción */
+}
+
+/* Panel del usuario */
+.user-panel {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #2d3238;
+}
+
+.user-panel .image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-panel .info a {
+  color: #ffffff;
+  margin-left: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Estilo para el menú de navegación */
+.nav-sidebar .nav-link {
+  color: #c2c7d0;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-sidebar .nav-link.active {
+  background-color: #495057;
+  color: #ffffff;
+}
+
+.nav-sidebar .nav-link:hover {
+  background-color: #495057;
+  color: #ffffff;
+}
+
+.nav-sidebar .nav-icon {
+  margin-right: 10px;
+}
+
+/* Submenús */
+.nav-treeview {
+  display: none;
+  padding-left: 15px;
+}
+
+.nav-item.has-treeview:hover .nav-treeview {
+  display: block;
+}
+
+.nav-treeview .nav-link {
+  color: #adb5bd;
+  padding: 5px 15px;
+}
+
+.nav-treeview .nav-link:hover {
+  background-color: #495057;
+  color: #ffffff;
+}
+
+/* Espaciado para elementos */
+.mt-2 {
+  margin-top: 0.5rem;
+}
