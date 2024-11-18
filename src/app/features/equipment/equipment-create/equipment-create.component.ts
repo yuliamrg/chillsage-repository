@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
 @Component({
-  selector: 'app-not-found',
+  selector: 'app-equipment-create',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './not-found.component.html',
+  templateUrl: './equipment-create.component.html',
   styles: ``
 })
-export class NotFoundComponent {
+export class EquipmentCreateComponent {
 
 }

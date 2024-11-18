@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-not-found',
+  selector: 'app-pending-orders',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './not-found.component.html',
+  templateUrl: './orders-list.component.html',
   styles: ``
 })
-export class NotFoundComponent {
+export class OrdersListComponent {
 
 }

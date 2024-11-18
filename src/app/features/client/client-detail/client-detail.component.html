@@ -1,0 +1,73 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Ver Cliente</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item"><a routerLink="/client/list">Listado de Clientes</a></li>
+            <li class="breadcrumb-item active">Detalles</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">Detalles del Cliente</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form>
+              <div class="row  m-1">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" value="Clinica de occidente" disabled>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>NIT</label>
+                    <input type="text" class="form-control" value="890450723" disabled>
+                  </div>
+                </div>
+              </div>
+              <div class="row  mx-1">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Direccion</label>
+                    <input type="text" class="form-control" value="Calle 18 Norte # 5N-34 " disabled>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Correo</label>
+                    <input type="text" class="form-control" value="clinicadeoccidente.com" disabled>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    <a routerLink="/client/list" class="btn btn-secondary">Volver</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+</div>
+

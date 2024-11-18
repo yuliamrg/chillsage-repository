@@ -1,7 +1,15 @@
 import { Routes } from '@angular/router';
-import { RolesComponent } from './roles/roles.component';
-import { UserListComponent } from './user-list/user-list.component';
+import { UsersRolesListComponent } from './users-roles-list/users-roles-list.component';
+import { UsersListComponent } from './users-list/users-list.component';
+import { UsersCreateComponent } from './users-create/users-create.component';
+import { UsersEditComponent } from './users-edit/users-edit.component';
+import { UsersDetailComponent } from './users-detail/users-detail.component';
+
 export const USERS_ROUTES: Routes = [
-  { path: 'list', component: UserListComponent },
-  { path: 'roles', component: RolesComponent },
+  { path: '', redirectTo: 'list', pathMatch: 'full' },
+  { path: 'list', component: UsersListComponent },
+  { path: 'roles', component: UsersRolesListComponent },
+  { path: 'new', component: UsersCreateComponent },
+  { path: 'edit', component: UsersEditComponent },
+  { path: 'detail', component: UsersDetailComponent },
 ];

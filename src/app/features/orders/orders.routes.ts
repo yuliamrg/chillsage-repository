@@ -1,9 +1,13 @@
 import { Routes } from "@angular/router"
-import { PendingOrdersComponent } from "./pending-orders/pending-orders.component"
-import { FinishOrdersComponent } from "./finish-orders/finish-orders.component"
+import { OrdersListComponent } from "./orders-list/orders-list.component"
+import { FinishedOrdersComponent } from "./finish-orders-list/finish-orders-list.component"
+import { OrdersEditComponent } from "./orders-edit/orders-edit.component"
+import { OrdersDetailComponent } from "./orders-detail/orders-detail.component"
 
 
 export const ORDERS_ROUTES: Routes = [
-  { path: 'pending', component: PendingOrdersComponent },
-  { path: 'finish', component: FinishOrdersComponent },
+  { path: 'list', component: OrdersListComponent },
+  { path: 'finished', component: FinishedOrdersComponent },
+  { path: 'edit', component: OrdersEditComponent },
+  { path: 'detail', component: OrdersDetailComponent },
 ]

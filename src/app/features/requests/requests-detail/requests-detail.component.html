@@ -1,0 +1,99 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Ver Solicitud</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a routerLink="/dashboard">Dashboard</a></li>
+            <li class="breadcrumb-item"><a routerLink="/requests/list">Listado de Solicitudes</a></li>
+            <li class="breadcrumb-item active">Detalles</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">Detalles</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form>
+              <div class="row  m-1">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Fecha de Creacion</label>
+                    <input type="text" class="form-control" value="2024-10-01 8:00:00" disabled>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Decripcion</label>
+                    <input type="text" class="form-control" value="Se solicita reparacion del equipo, no enfría" disabled>
+                  </div>
+                </div>
+              </div>
+              <div class="row  mx-1">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Solicitante</label>
+                    <input type="text" class="form-control" value="Yuliam Rivera" disabled>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Equipo</label>
+                    <input type="text" class="form-control" value="Aire Acondicionado, York, YSM, 123456, CDO123 " disabled>
+                  </div>
+                </div>
+              </div>
+              <div class="row mx-1">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Ubicacion</label>
+                    <input type="text" class="form-control" value="Clinica de occidente, Rayos X" disabled>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Observaciones</label>
+                    <select class="form-control" disabled>
+                      <option value="1">ninguna</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row mx-1">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Estado</label>
+                    <input type="text" class="form-control" value="Pendiente" disabled>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    <a routerLink="/requests/list" class="btn btn-secondary">Volver</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+</div>
+

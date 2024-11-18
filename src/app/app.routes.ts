@@ -7,13 +7,6 @@ export const routes: Routes = [
     redirectTo: 'dashboard',
   },
   {
-    path: 'equipment',
-    loadComponent: () =>
-      import('./features/equipment/equipment.component').then(
-        (m) => m.EquipmentComponent
-      ),
-  },
-  {
     path: 'dashboard',
     loadComponent: () =>
       import('./features/dashboard/dashboard.component').then(
@@ -22,17 +15,22 @@ export const routes: Routes = [
   },
   {
     path: 'schedule',
-    loadComponent: () =>
-      import('./features/schedule/schedule.component').then(
-        (m) => m.ScheduleComponent
+    loadChildren: () =>
+      import('./features/schedule/schedule.routes').then(
+        (m) => m.SCHEDULE_ROUTES
+      ),
+  },
+  {
+    path: 'equipment',
+    loadChildren: () =>
+      import('./features/equipment/equipment.routes').then(
+        (m) => m.EQUIPMENT_ROUTES
       ),
   },
   {
     path: 'orders',
     loadChildren: () =>
-      import('./features/orders/orders.routes').then(
-        (m) => m.ORDERS_ROUTES
-      ),
+      import('./features/orders/orders.routes').then((m) => m.ORDERS_ROUTES),
   },
   {
     path: 'requests',
@@ -44,9 +42,12 @@ export const routes: Routes = [
   {
     path: 'users',
     loadChildren: () =>
-      import('./features/users/users.routes').then(
-        (m) => m.USERS_ROUTES
-      ),
+      import('./features/users/users.routes').then((m) => m.USERS_ROUTES),
+  },
+  {
+    path: 'client',
+    loadChildren: () =>
+      import('./features/client/client.routes').then((m) => m.CLIENT_ROUTES),
   },
   {
     path: '**',
